@@ -28,19 +28,23 @@ function binarySearch(arr, val) {
 
 // binarySearch([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], 4);
 
-function stringSearch (str) {
+function stringSearch(long, short) {
   let count = 0;
-  let searchTerm = 'omg'
 
-  for (let i = 0; i < str.length; i++) {
-    console.log(`str: ${str[i]}`);
-      for (let j = 0; j < searchTerm.length; j++) {
-        if (str[i] === searchTerm[j]) {
-          console.log(`searchTErm: ${searchTerm[j]}`);
-        }
+  for (let i = 0; i < long.length; i++) {
+    for (let j = 0; j < short.length; j++) {
+      // console.log(short[j], long[i + j]);
+      if (short[j] !== long[i + j]) {
+        // console.log('break');
+        break;
       }
+      if(j === short.length - 1) {
+        count++;
+      }
+    }
   }
-
+  console.log(count);
+  return count;
 }
 
-stringSearch('omgsfomslfkgfsklomg')
+stringSearch('omgsfomslfkggfsklomg', 'omg');
