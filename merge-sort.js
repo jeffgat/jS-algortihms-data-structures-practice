@@ -12,24 +12,23 @@ function merge(arr1, arr2) {
       results.push(arr2[j]);
       j++;
     }
+  }
+  // these 2 while loops just run unconditionally because we've hit the end of one array
+  // therefore we can just push the tail end of the other array onto the one we've finished looping through
+  while (i < arr1.length) {
+    results.push(arr1[i]);
+    i++;
+  }
 
-    // these 2 while loops just run unconditionally because we've hit the end of one array
-    // therefore we can just push the tail end of the other array onto the one we've finished looping through
-    while (i < arr1.length) {
-      results.push(arr1[i]);
-      i++;
-    }
-
-    while (j < arr2.length) {
-      results.push(arr1[j]);
-      j++;
-    }
+  while (j < arr2.length) {
+    results.push(arr2[j]);
+    j++;
   }
 
   return results;
 }
 
-const mergeSort = (arr) => {
+function mergeSort(arr) {
   if (arr.length <= 1) return arr;
   let mid = Math.floor(arr.length / 2);
 

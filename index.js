@@ -4,7 +4,7 @@ const merge = require('./merge-sort');
 const port = 4000;
 const app = express();
 
-merge.mergeSort([10, 24, 76, 73, 72, 1, 9]);
+merge.mergeSort([10, 24, 76, 73]);
 
 app.listen(port),
   () => {
