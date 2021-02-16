@@ -1,0 +1,16 @@
+{
+  "name": "js-algorithms-data",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jeffgat/jS-algortihms-data-structures-practice.git",
+  "author": "jeffgat <jeff.gtbn@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "node": "^15.8.0",
+    "nodemon": "^2.0.7"
+  }
+}
