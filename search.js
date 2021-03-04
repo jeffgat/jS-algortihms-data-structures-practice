@@ -1,3 +1,4 @@
+// O(n)
 function linearSearch(arr, val) {
   arr.map((item, idx) => {
     if (item === val) {
@@ -8,6 +9,7 @@ function linearSearch(arr, val) {
   });
 }
 
+// O(log(n))
 function binarySearch(arr, val) {
   let left = 0;
   let right = arr.length - 1;
