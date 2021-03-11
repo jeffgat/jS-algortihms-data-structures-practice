@@ -16,6 +16,8 @@ console.log(list.push(100));
 console.log(list.push(100));
 console.log(list.push(200));
 
+console.log(list.pop());
+
 app.listen(port),
   () => {
     console.log('server started on localhost:6000');
