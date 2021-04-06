@@ -1,9 +1,9 @@
 const express = require('express');
-const merge = require('./merge-sort');
-const quick = require('./quick-sort');
-const radix = require('./radix-sort');
-const nodes = require('./doubly-linked-list');
-const stack = require('./stack');
+// const merge = require('./merge-sort');
+// const quick = require('./quick-sort');
+// const radix = require('./radix-sort');
+// const nodes = require('./doubly-linked-list');
+// const stack = require('./stack');
 const tree = require('./binary-search-tree');
 
 const port = 6000;
